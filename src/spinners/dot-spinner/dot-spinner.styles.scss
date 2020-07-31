@@ -1,0 +1,23 @@
+@keyframes wiggle {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(10deg);
+    }
+    100% {
+        transform: rorate(0deg);
+    }
+}
+
+.dot-spinner {
+    position: relative;
+
+    .dot-container {
+        display: flex;
+        position: absolute;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+    }
+}

@@ -1,24 +1,21 @@
 import React from 'react';
 import logo from './logo.svg';
-import './App.css';
+import './App.scss';
+
+import makeHoverable from './components/hoverable/hoverable.component'
+
+import { DotGrowSpinner } from './spinners/dot-spinner/dot-spinner.component'
+import RingSpinner from './spinners/rings-spinner/rings-spinner.component'
+import BorderSpinner from './spinners/border-spinner/border-spinner.component'
+import SquareBlur from './spinners/square-blur/square-blur.component'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <DotGrowSpinner />
+      <RingSpinner />
+      <BorderSpinner />
+      <SquareBlur />
     </div>
   );
 }

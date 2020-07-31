@@ -1,0 +1,16 @@
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100vw;
+  height: 100vh;
+
+  & > * {
+    $size: 90px;
+
+    margin: 40px;
+    width: $size;
+    height: $size;
+  }
+}
